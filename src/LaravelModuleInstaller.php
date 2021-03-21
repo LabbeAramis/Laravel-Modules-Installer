@@ -21,7 +21,11 @@ class LaravelModuleInstaller extends LibraryInstaller
   public function getInstallPath( PackageInterface $package )
   {
 
-    return $this->getBaseInstallationPath() . '/' . $this->getModuleName( $package );
+    $installPath = $this->getBaseInstallationPath() . '/' . $this->getModuleName( $package );
+
+    echo "\n" . 'Install path: ' . $installPath . "\n";
+
+    return $installPath;
   }
 
   /**
