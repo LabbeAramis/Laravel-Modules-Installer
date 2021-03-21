@@ -1,0 +1,38 @@
+{
+  "name": "labbearamis/laravel-modules-installer",
+  "type": "composer-plugin",
+  "keywords": [
+    "modules",
+    "laravel",
+    "installer",
+    "labbe aramis",
+    "module",
+    "rad"
+  ],
+  "homepage": "https://github.com/LabbeAramis/Laravel-Modules-Installer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Labbe Aramis",
+      "email": "labbe.aramis@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LabbeAramis\\LaravelModuleInstaller\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "LabbeAramis\\LaravelModuleInstaller\\LaravelModuleInstallerPlugin"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0",
+    "mockery/mockery": "~1.0",
+    "phpunit/phpunit": "~8.0 || ~9.0"
+  },
+  "require": {
+    "composer-plugin-api": "^2.0",
+    "php": "7.* || 8.*"
+  }
+}
