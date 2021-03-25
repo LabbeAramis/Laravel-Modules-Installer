@@ -16,7 +16,6 @@ class LaravelModuleInstallerPlugin implements PluginInterface
   public function activate( Composer $composer, IOInterface $io )
   {
 
-    echo "\n" . 'Run activate method of LaravelModuleInstallerPlugin' . "\n";
     $installer = new LaravelModuleInstaller( $io, $composer );
     $composer->getInstallationManager()->addInstaller( $installer );
   }

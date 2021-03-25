@@ -23,8 +23,6 @@ class LaravelModuleInstaller extends LibraryInstaller
 
     $installPath = $this->getBaseInstallationPath() . '/' . $this->getModuleName( $package );
 
-    echo "\n" . 'Install path: ' . $installPath . "\n";
-
     return $installPath;
   }
 
